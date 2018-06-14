@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-
+  desc = '';
+  addTodo () {
+    console.log(this.desc);
+  }
   constructor() { }
 
   ngOnInit() {
